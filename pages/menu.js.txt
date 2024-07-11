@@ -1,0 +1,20 @@
+import React from 'react';
+import MenuItem from '../components/MenuItem';
+
+const MenuPage = () => {
+  const menuItems = [
+    { name: 'Lemon Chicken', description: 'Citrusy and tangy chicken dish.', price: '$12.99' },
+    { name: 'Lemon Tart', description: 'Delicious lemon tart dessert.', price: '$6.99' },
+  ];
+
+  return (
+    <div>
+      <h2>Menu</h2>
+      {menuItems.map((item, index) => (
+        <MenuItem key={index} {...item} />
+      ))}
+    </div>
+  );
+};
+
+export default MenuPage;

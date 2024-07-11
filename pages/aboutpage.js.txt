@@ -1,0 +1,12 @@
+import React from 'react';
+
+const AboutPage = () => {
+  return (
+    <div>
+      <h2>About Us</h2>
+      <p>Little Lemon is dedicated to bringing you the best lemon-flavored dishes.</p>
+    </div>
+  );
+};
+
+export default AboutPage;
